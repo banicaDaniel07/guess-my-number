@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/683ca5c315.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <body>
+        <nav>
+            <button class="again">Again!</button>
+            <p class="between">(Between 1 and 20)</p>
+        </nav>
+        <section class="content">
+            <h1 class="content-title">Guess My Number!</h1>
+            <div class="content-line"></div>
+            <div class="content-show">?</div>
+        </section>
+        <div class="wrapper">
+            <section class="change">
+                <div class="change-left">
+                    <input type="number" class="change-number" onclick="this.value=''" max="99" id="guess">
+                    <button class="change-check">Check!</button>
+                </div>
+                <div class="change-right">
+                    <p class="change-detail">Start guessing!</p>
+                    <p class="change-score">Score: <span class="change-score-number">20</span></p>
+                    <p class="change-highscore">Highscore: <span class="change-highscore-number">0</span></p>
+                </div>
+            </section>
+        </div>
+    </body>
+<script src="script.js"></script>
+</html>

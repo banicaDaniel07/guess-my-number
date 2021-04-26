@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Press Start 2P";
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Upper part */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+nav .again {
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+nav .between {
+  font-size: 1.5rem;
+}
+
+/* Center part */
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+}
+
+.content .content-title {
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+
+.content .content-show {
+  text-align: center;
+  font-size: 5rem;
+  background-color: #fff;
+  color: black;
+  width: 150px;
+  padding: 3rem 0;
+  margin-top: 8rem;
+}
+
+.content .content-line {
+  width: 100%;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 220px;
+  z-index: -1;
+}
+
+/* Bottom part */
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 500px;
+}
+
+.change {
+  padding-top: 100px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+/* Left part */
+
+.change .change-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.change .change-left .change-number {
+  width: 250px;
+  height: 120px;
+  padding: 0 1rem;
+  outline: none;
+  font-size: 6rem;
+  text-align: center;
+  color: #fff;
+  background: none;
+  border: 3px solid #fff;
+  margin-bottom: 3rem;
+}
+
+.change .change-left .change-check {
+  width: 180px;
+  height: 60px;
+  padding: 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #111;
+}
+
+/* right part */
+
+.change .change-right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.change .change-right .change-detail {
+  font-size: 2.5rem;
+  margin-bottom: 10rem;
+}
+
+.change .change-right .change-score {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.change .change-right .change-score span {
+  font-size: 2.5rem;
+}
+
+.change .change-right .change-highscore {
+  font-size: 2.5rem;
+}
+
+.change .change-right .change-highscore span {
+  font-size: 2.5rem;
+}
+
+/* MEDIA HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+
+@media screen and (max-width: 850px) {
+  /* Center */
+  .content .content-line {
+    top: 170px;
+  }
+  .content .content-title {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 2rem;
+  }
+  /* Bottom */
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .change {
+    padding-top: 5rem;
+    margin-top: 5rem;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .change .change-right .change-detail,
+  .change .change-right .change-score,
+  .change .change-right .change-score span,
+  .change .change-right .change-highscore,
+  .change .change-right .change-highscore span {
+    font-size: 2rem;
+  }
+
+  .change .change-right .change-detail {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .change .change-right .change-score {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .change .change-right .change-highscore {
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+
+  .change .change-left {
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+
+  .change .change-left .change-number {
+    width: 200px;
+    height: 80px;
+    padding: 0 1rem;
+    font-size: 4rem;
+  }
+}
+
+/* MEDIA HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+
+@media screen and (max-width: 650px) {
+  /* Top */
+
+  body {
+    overflow: hidden;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  nav .again {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  nav .between {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  /* Center */
+
+  .content {
+    height: 200px;
+  }
+  .content .content-title {
+    font-size: 2.5rem;
+  }
+
+  .content .content-show {
+    margin-top: 3rem;
+  }
+
+  .content .content-line {
+    width: 100%;
+    top: 130px;
+  }
+
+  /* Bottom */
+
+  .change .change-right .change-detail,
+  .change .change-right .change-score,
+  .change .change-right .change-score span,
+  .change .change-right .change-highscore,
+  .change .change-right .change-highscore span {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .change {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 1rem;
+  }
+
+  .change .change-left {
+    margin-top: 4rem;
+  }
+}
